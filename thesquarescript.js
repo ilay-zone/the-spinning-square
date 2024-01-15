@@ -110,7 +110,16 @@ function time() {
     }
     present.innerHTML = ranger.value * 2 + "%  ";
     px.innerHTML = rangerr.value * 2 + "%  ";
-    if (pit.checked==true) {
+    if (divv.classList.has("secret")) {
+        divv.classList.remove("pit");
+        divv.classList.remove("pig");
+        divv.classList.remove("rotem");
+        divv.classList.remove("mario");
+        divv.classList.remove("ender");
+        divv.classList.remove("creep")
+        divv.style.backgroundImage = ""
+    }
+    else if (pit.checked==true) {
         divv.classList.add("pit");
         divv.classList.remove("pig");
         divv.classList.remove("rotem");

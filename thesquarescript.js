@@ -64,7 +64,7 @@ reader.onload = function(event) {
 }
 reader.readAsDataURL(selectedImageFile);
 }
-pa.innerHTML =  "please wait:3secondes"
+pa.innerHTML =  "click the square!"
 console.log("variable's loaded")
 setInterval(time, 10)
 function time() {
@@ -246,7 +246,7 @@ function ss() {
 }
 function change() {
 pressed = !pressed
-if (timer>=2.95&&divv.id=="pov") {  
+if (divv.id=="pov") {  
     if (mario.checked==true) {
         pxcc = 1
         musicc.src = "music/mario.mp3"
@@ -267,6 +267,7 @@ if (pressed) {
     console.log("music starting")
 }
 else {
+    pa.innerHTML = "click the square!"
     musicc.pause()
     musicc.currentTime = 0;
     ter =0

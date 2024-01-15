@@ -30,6 +30,7 @@
         }
 
         // listen() takes two arguments:
+        
         // 1. A callback function that is invoked anytime a word is recognized.
         // 2. A configuration object with adjustable fields
         recognizer.listen(result => {

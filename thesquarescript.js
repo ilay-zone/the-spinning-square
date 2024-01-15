@@ -64,7 +64,7 @@ reader.onload = function(event) {
 }
 reader.readAsDataURL(selectedImageFile);
 }
-pa.innerHTML =  "click the square!"
+p.innerHTML =  "click the square!"
 console.log("variable's loaded")
 setInterval(time, 10)
 function time() {
@@ -224,10 +224,10 @@ function time() {
         }
     }
     else if (divv.id=="pov") {
-        pa.innerHTML = "please wait:" + left + "secondes"
+        p.innerHTML = "click the square!"
     }
     else {
-        pa.innerHTML = ""
+        p.innerHTML = ""
     }
 }
 function bo() {
@@ -259,7 +259,7 @@ if (divv.id=="pov") {
     }
 }
 if (pressed) {
-    pa.innerHTML = ""
+    p.innerHTML = ""
     divv.id = "hello"
     divv.classList.add("spin");
     console.log("square is spining")
@@ -267,7 +267,7 @@ if (pressed) {
     console.log("music starting")
 }
 else {
-    pa.innerHTML = "click the square!"
+    p.innerHTML = "click the square!"
     musicc.pause()
     musicc.currentTime = 0;
     ter =0

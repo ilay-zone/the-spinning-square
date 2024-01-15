@@ -16,7 +16,10 @@ div {
 body {
     text-align: center;
 }
-
+.secret {
+    background-image: url("sprites/secretjpeg");
+    background-size: 100% 100%; /* width 100% */
+}
 .pit {   
     background-image: url("sprites/sad_pit.jpg");
     background-size: 100% 100%; /* width 100% */

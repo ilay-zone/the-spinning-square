@@ -325,6 +325,9 @@ function rran(a) {
             for (let i = 0; i < classLabels.length; i++) {
                 const classPrediction = classLabels[i] + ": " + result.scores[i].toFixed(2);
                 labelContainer.childNodes[i].innerHTML = classPrediction;
+                if (classLabels[i] == "secret" && result.scores[i] >= 50) {
+                    div.classlist.add("secret")
+                }
             }
         }, {
             includeSpectrogram: true, // in case listen should return result.spectrogram

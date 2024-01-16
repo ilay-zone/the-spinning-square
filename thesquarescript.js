@@ -66,7 +66,7 @@ reader.readAsDataURL(selectedImageFile);
 }
 p.innerHTML =  "click the square!"
 console.log("variable's loaded")
-setInterval(time, 10)
+var update = setInterval(time, 10)
 function time() {
     if (pd!==1) {
     if (pd==0) {

@@ -67,6 +67,7 @@ var secs =  getOrSetVariable('secs');
 var ter = 0
 var imageDataUrl = ""
 function pie() {
+    setVariable('secs', 0);
     secs = 0
 }
 imageInput.addEventListener('change', handleImageSelect); 

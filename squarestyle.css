@@ -89,7 +89,7 @@ button {
     animation-name: end;
     animation-duration: 1s; 
 }
-p, pre, details {
+p, #pods, pre, details {
     background-color:white;
     color: red;
     animation-iteration-count: infinite; 

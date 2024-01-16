@@ -109,7 +109,7 @@ function time() {
     }
     present.innerHTML = ranger.value * 2 + "%  ";
     px.innerHTML = rangerr.value * 2 + "%  ";
-    if (divv.classList.has("secret")) {
+    /*if (divv.classList.contain("secret")) {
         divv.classList.remove("pit");
         divv.classList.remove("pig");
         divv.classList.remove("rotem");
@@ -118,7 +118,7 @@ function time() {
         divv.classList.remove("creep")
         divv.style.backgroundImage = ""
     }
-    else if (pit.checked==true) {
+    else*/ if (pit.checked==true) {
         divv.classList.add("pit");
         divv.classList.remove("pig");
         divv.classList.remove("rotem");

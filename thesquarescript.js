@@ -229,6 +229,7 @@ function time() {
         p.innerHTML = ""
     }
 }
+var update = setInterval(time, 10)
 function bo() {
     musicc.pause()
     musicc.currentTime = 0;
@@ -339,6 +340,5 @@ function rran(a) {
         // setTimeout(() => recognizer.stopListening(), 5000);
     }*/
 //window.onload = function() {
-    var update = setInterval(time, 10)
 //}
 

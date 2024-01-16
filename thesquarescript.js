@@ -43,9 +43,27 @@ reader.onload = function(event) {
 }
 reader.readAsDataURL(aag);
 }
+function getOrSetVariable(variable) {
+    // Check if the variable is already in localStorage
+    const savedValue = localStorage.getItem(variable);
+
+    if (savedValue !== null) {
+        // If set, return the stored value
+        return parseInt(savedValue, 10); // Assuming it's an integer; adjust as needed
+    } else {
+        // If not set, set it to 0 in localStorage and return the value
+        localStorage.setItem(variable, '0');
+        return 0;
+    }
+}
+function setVariable(variable, value) {
+    // Set the variable to the provided value in localStorage
+    localStorage.setItem(variable, value.toString());
+}
+
 
 divv.src = "https://www.dropbox.com/s/nvcslw815ge97um/Screenshot_2023-02-06-11-03-54-240_no.mobitroll.kahoot.android-edit.jpg?dl=0"
-var secs = 0
+var secs =  getOrSetVariable('secs');
 var ter = 0
 var imageDataUrl = ""
 function pie() {
@@ -267,6 +285,7 @@ if (pressed) {
     console.log("music starting")
 }
 else {
+    setVariable('secs', secs);
     p.innerHTML = "click the square!"
     musicc.pause()
     musicc.currentTime = 0;
@@ -341,4 +360,3 @@ function rran(a) {
     }*/
 //window.onload = function() {
 //}
-

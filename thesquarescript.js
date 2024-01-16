@@ -338,7 +338,7 @@ function rran(a) {
         // Stop the recognition in 5 seconds.
         // setTimeout(() => recognizer.stopListening(), 5000);
     }
-function start() {
+window.onload = function() {
     var update = setInterval(time, 10)
 }
-windows.onload(start)
+

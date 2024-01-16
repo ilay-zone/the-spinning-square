@@ -285,7 +285,7 @@ function rran(a) {
     rangerr.value = 50
 }
 
-// more documentation available at
+/*// more documentation available at
     // https://github.com/tensorflow/tfjs-models/tree/master/speech-commands
 
     // the link to your model provided by Teachable Machine export panel
@@ -337,7 +337,7 @@ function rran(a) {
 
         // Stop the recognition in 5 seconds.
         // setTimeout(() => recognizer.stopListening(), 5000);
-    }
+    }*/
 window.onload = function() {
     var update = setInterval(time, 10)
 }

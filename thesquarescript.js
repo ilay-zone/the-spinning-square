@@ -66,7 +66,6 @@ reader.readAsDataURL(selectedImageFile);
 }
 p.innerHTML =  "click the square!"
 console.log("variable's loaded")
-var update = setInterval(time, 10)
 function time() {
     if (pd!==1) {
     if (pd==0) {
@@ -339,3 +338,7 @@ function rran(a) {
         // Stop the recognition in 5 seconds.
         // setTimeout(() => recognizer.stopListening(), 5000);
     }
+function start() {
+    var update = setInterval(time, 10)
+}
+windows.onload(start)
